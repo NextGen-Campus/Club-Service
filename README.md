@@ -9,7 +9,6 @@ This system is designed to manage clubs efficiently across multiple colleges. It
 - **name**: Name of the club.
 - **id**: Unique identifier.
 - **members**: List of club members.
-- **admin**: Club administrators.
 - **type**: Type/category of the club.
 - **college_name**: College associated with the club.
 - **rating**: Average rating of the club.
@@ -21,7 +20,6 @@ This system is designed to manage clubs efficiently across multiple colleges. It
 ### Student
 - **id**: Unique identifier.
 - **name**: Name of the student.
-- **type**: Role (admin/member).
 - **college_name**: College of the student.
 - **email**: Contact email.
 
@@ -30,7 +28,7 @@ This system is designed to manage clubs efficiently across multiple colleges. It
 - **event**: Event name/description.
 - **rating**: Event rating.
 
-## 🧰 Controllers
+## 🧰 EndPoints
 
 - **Add Club**: Create a new club.
 - **Add Admin**: Assign an admin to a club.

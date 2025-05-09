@@ -1,9 +1,10 @@
-# Intercollege Club Management System
+# 🎓 Intercollege Club Management System
 
-## Project Overview
+## 📋 Project Overview
 This system is designed to manage clubs efficiently across multiple colleges. It provides various controllers to perform CRUD operations and allows users to engage with clubs through ratings and memberships.
 
-## Models
+## 🧩 Models
+
 ### Club
 - **name**: Name of the club.
 - **id**: Unique identifier.
@@ -29,7 +30,8 @@ This system is designed to manage clubs efficiently across multiple colleges. It
 - **event**: Event name/description.
 - **rating**: Event rating.
 
-## Controllers
+## 🧰 Controllers
+
 - **Add Club**: Create a new club.
 - **Add Admin**: Assign an admin to a club.
 - **Remove Admin**: Remove an admin from a club.
@@ -44,9 +46,8 @@ This system is designed to manage clubs efficiently across multiple colleges. It
 - **Register Request for Club**: Request to join a club.
 - **Search Club**: Find clubs based on categories, college, or interests.
 
-## Setup Instructions
+## 🛠️ Setup Instructions
+
 1. Clone the repository.
 2. Install necessary dependencies.
 3. Run the server and start using the system.
-
----

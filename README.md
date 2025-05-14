@@ -1,4 +1,4 @@
-# 🎓 Intercollege Club Management System
+# 🎓 Club Service
 
 ## 📋 Project Overview
 This system is designed to manage clubs efficiently across multiple colleges. It provides various controllers to perform CRUD operations and allows users to engage with clubs through ratings and memberships.

@@ -1,0 +1,45 @@
+{
+  "name": "nextgen-campus",
+  "version": "1.0.0",
+  "description": "This system is designed to manage clubs efficiently across multiple colleges. It provides various controllers to perform CRUD operations and allows users to engage with clubs through ratings and memberships.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NextGen-Campus/Club-Service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NextGen-Campus/Club-Service/issues"
+  },
+  "homepage": "https://github.com/NextGen-Campus/Club-Service#readme",
+  "dependencies": {
+    "@prisma/client": "^6.8.2",
+    "cloudinary": "^2.6.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.16.0",
+    "multer": "^1.4.5-lts.2",
+    "nodemon": "^3.1.10",
+    "prisma-client": "^0.0.0",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.2",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/multer": "^1.4.12",
+    "install": "^0.13.0",
+    "npm": "^11.4.0",
+    "prisma": "^6.8.2"
+  }
+}

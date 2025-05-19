@@ -19,14 +19,14 @@ model Club {
   name          String
   members       Student[] @relation(fields: [], references: []) // manual relation
   type          String
-  college_name  String
-  rating        Float?
-  logo          String?
+  collegeName   String
+  rating        Float?    @default(0)
+  logo          String
   description   String?
-  creation_date DateTime
-  insta_link    String?
-  github_link   String?
-  linkedin_link String?
+  creation_date DateTime  @default(now())
+  instaLink     String?
+  githubLink    String?
+  linkedinLink  String?
 }
 
 model Student {

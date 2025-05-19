@@ -117,14 +117,14 @@ exports.Prisma.ClubScalarFieldEnum = {
   id: 'id',
   name: 'name',
   type: 'type',
-  college_name: 'college_name',
+  collegeName: 'collegeName',
   rating: 'rating',
   logo: 'logo',
   description: 'description',
   creation_date: 'creation_date',
-  insta_link: 'insta_link',
-  github_link: 'github_link',
-  linkedin_link: 'linkedin_link'
+  instaLink: 'instaLink',
+  githubLink: 'githubLink',
+  linkedinLink: 'linkedinLink'
 };
 
 exports.Prisma.StudentScalarFieldEnum = {

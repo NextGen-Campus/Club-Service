@@ -1059,42 +1059,42 @@ export namespace Prisma {
     id: string | null
     name: string | null
     type: string | null
-    college_name: string | null
+    collegeName: string | null
     rating: number | null
     logo: string | null
     description: string | null
     creation_date: Date | null
-    insta_link: string | null
-    github_link: string | null
-    linkedin_link: string | null
+    instaLink: string | null
+    githubLink: string | null
+    linkedinLink: string | null
   }
 
   export type ClubMaxAggregateOutputType = {
     id: string | null
     name: string | null
     type: string | null
-    college_name: string | null
+    collegeName: string | null
     rating: number | null
     logo: string | null
     description: string | null
     creation_date: Date | null
-    insta_link: string | null
-    github_link: string | null
-    linkedin_link: string | null
+    instaLink: string | null
+    githubLink: string | null
+    linkedinLink: string | null
   }
 
   export type ClubCountAggregateOutputType = {
     id: number
     name: number
     type: number
-    college_name: number
+    collegeName: number
     rating: number
     logo: number
     description: number
     creation_date: number
-    insta_link: number
-    github_link: number
-    linkedin_link: number
+    instaLink: number
+    githubLink: number
+    linkedinLink: number
     _all: number
   }
 
@@ -1111,42 +1111,42 @@ export namespace Prisma {
     id?: true
     name?: true
     type?: true
-    college_name?: true
+    collegeName?: true
     rating?: true
     logo?: true
     description?: true
     creation_date?: true
-    insta_link?: true
-    github_link?: true
-    linkedin_link?: true
+    instaLink?: true
+    githubLink?: true
+    linkedinLink?: true
   }
 
   export type ClubMaxAggregateInputType = {
     id?: true
     name?: true
     type?: true
-    college_name?: true
+    collegeName?: true
     rating?: true
     logo?: true
     description?: true
     creation_date?: true
-    insta_link?: true
-    github_link?: true
-    linkedin_link?: true
+    instaLink?: true
+    githubLink?: true
+    linkedinLink?: true
   }
 
   export type ClubCountAggregateInputType = {
     id?: true
     name?: true
     type?: true
-    college_name?: true
+    collegeName?: true
     rating?: true
     logo?: true
     description?: true
     creation_date?: true
-    insta_link?: true
-    github_link?: true
-    linkedin_link?: true
+    instaLink?: true
+    githubLink?: true
+    linkedinLink?: true
     _all?: true
   }
 
@@ -1240,14 +1240,14 @@ export namespace Prisma {
     id: string
     name: string
     type: string
-    college_name: string
+    collegeName: string
     rating: number | null
-    logo: string | null
+    logo: string
     description: string | null
     creation_date: Date
-    insta_link: string | null
-    github_link: string | null
-    linkedin_link: string | null
+    instaLink: string | null
+    githubLink: string | null
+    linkedinLink: string | null
     _count: ClubCountAggregateOutputType | null
     _avg: ClubAvgAggregateOutputType | null
     _sum: ClubSumAggregateOutputType | null
@@ -1273,14 +1273,14 @@ export namespace Prisma {
     id?: boolean
     name?: boolean
     type?: boolean
-    college_name?: boolean
+    collegeName?: boolean
     rating?: boolean
     logo?: boolean
     description?: boolean
     creation_date?: boolean
-    insta_link?: boolean
-    github_link?: boolean
-    linkedin_link?: boolean
+    instaLink?: boolean
+    githubLink?: boolean
+    linkedinLink?: boolean
     members?: boolean | Club$membersArgs<ExtArgs>
     _count?: boolean | ClubCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["club"]>
@@ -1291,17 +1291,17 @@ export namespace Prisma {
     id?: boolean
     name?: boolean
     type?: boolean
-    college_name?: boolean
+    collegeName?: boolean
     rating?: boolean
     logo?: boolean
     description?: boolean
     creation_date?: boolean
-    insta_link?: boolean
-    github_link?: boolean
-    linkedin_link?: boolean
+    instaLink?: boolean
+    githubLink?: boolean
+    linkedinLink?: boolean
   }
 
-  export type ClubOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "name" | "type" | "college_name" | "rating" | "logo" | "description" | "creation_date" | "insta_link" | "github_link" | "linkedin_link", ExtArgs["result"]["club"]>
+  export type ClubOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "name" | "type" | "collegeName" | "rating" | "logo" | "description" | "creation_date" | "instaLink" | "githubLink" | "linkedinLink", ExtArgs["result"]["club"]>
   export type ClubInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     members?: boolean | Club$membersArgs<ExtArgs>
     _count?: boolean | ClubCountOutputTypeDefaultArgs<ExtArgs>
@@ -1316,14 +1316,14 @@ export namespace Prisma {
       id: string
       name: string
       type: string
-      college_name: string
+      collegeName: string
       rating: number | null
-      logo: string | null
+      logo: string
       description: string | null
       creation_date: Date
-      insta_link: string | null
-      github_link: string | null
-      linkedin_link: string | null
+      instaLink: string | null
+      githubLink: string | null
+      linkedinLink: string | null
     }, ExtArgs["result"]["club"]>
     composites: {}
   }
@@ -1720,14 +1720,14 @@ export namespace Prisma {
     readonly id: FieldRef<"Club", 'String'>
     readonly name: FieldRef<"Club", 'String'>
     readonly type: FieldRef<"Club", 'String'>
-    readonly college_name: FieldRef<"Club", 'String'>
+    readonly collegeName: FieldRef<"Club", 'String'>
     readonly rating: FieldRef<"Club", 'Float'>
     readonly logo: FieldRef<"Club", 'String'>
     readonly description: FieldRef<"Club", 'String'>
     readonly creation_date: FieldRef<"Club", 'DateTime'>
-    readonly insta_link: FieldRef<"Club", 'String'>
-    readonly github_link: FieldRef<"Club", 'String'>
-    readonly linkedin_link: FieldRef<"Club", 'String'>
+    readonly instaLink: FieldRef<"Club", 'String'>
+    readonly githubLink: FieldRef<"Club", 'String'>
+    readonly linkedinLink: FieldRef<"Club", 'String'>
   }
     
 
@@ -4101,14 +4101,14 @@ export namespace Prisma {
     id: 'id',
     name: 'name',
     type: 'type',
-    college_name: 'college_name',
+    collegeName: 'collegeName',
     rating: 'rating',
     logo: 'logo',
     description: 'description',
     creation_date: 'creation_date',
-    insta_link: 'insta_link',
-    github_link: 'github_link',
-    linkedin_link: 'linkedin_link'
+    instaLink: 'instaLink',
+    githubLink: 'githubLink',
+    linkedinLink: 'linkedinLink'
   };
 
   export type ClubScalarFieldEnum = (typeof ClubScalarFieldEnum)[keyof typeof ClubScalarFieldEnum]
@@ -4222,14 +4222,14 @@ export namespace Prisma {
     id?: StringFilter<"Club"> | string
     name?: StringFilter<"Club"> | string
     type?: StringFilter<"Club"> | string
-    college_name?: StringFilter<"Club"> | string
+    collegeName?: StringFilter<"Club"> | string
     rating?: FloatNullableFilter<"Club"> | number | null
-    logo?: StringNullableFilter<"Club"> | string | null
+    logo?: StringFilter<"Club"> | string
     description?: StringNullableFilter<"Club"> | string | null
     creation_date?: DateTimeFilter<"Club"> | Date | string
-    insta_link?: StringNullableFilter<"Club"> | string | null
-    github_link?: StringNullableFilter<"Club"> | string | null
-    linkedin_link?: StringNullableFilter<"Club"> | string | null
+    instaLink?: StringNullableFilter<"Club"> | string | null
+    githubLink?: StringNullableFilter<"Club"> | string | null
+    linkedinLink?: StringNullableFilter<"Club"> | string | null
     members?: StudentListRelationFilter
   }
 
@@ -4237,14 +4237,14 @@ export namespace Prisma {
     id?: SortOrder
     name?: SortOrder
     type?: SortOrder
-    college_name?: SortOrder
+    collegeName?: SortOrder
     rating?: SortOrder
     logo?: SortOrder
     description?: SortOrder
     creation_date?: SortOrder
-    insta_link?: SortOrder
-    github_link?: SortOrder
-    linkedin_link?: SortOrder
+    instaLink?: SortOrder
+    githubLink?: SortOrder
+    linkedinLink?: SortOrder
     members?: StudentOrderByRelationAggregateInput
   }
 
@@ -4255,14 +4255,14 @@ export namespace Prisma {
     NOT?: ClubWhereInput | ClubWhereInput[]
     name?: StringFilter<"Club"> | string
     type?: StringFilter<"Club"> | string
-    college_name?: StringFilter<"Club"> | string
+    collegeName?: StringFilter<"Club"> | string
     rating?: FloatNullableFilter<"Club"> | number | null
-    logo?: StringNullableFilter<"Club"> | string | null
+    logo?: StringFilter<"Club"> | string
     description?: StringNullableFilter<"Club"> | string | null
     creation_date?: DateTimeFilter<"Club"> | Date | string
-    insta_link?: StringNullableFilter<"Club"> | string | null
-    github_link?: StringNullableFilter<"Club"> | string | null
-    linkedin_link?: StringNullableFilter<"Club"> | string | null
+    instaLink?: StringNullableFilter<"Club"> | string | null
+    githubLink?: StringNullableFilter<"Club"> | string | null
+    linkedinLink?: StringNullableFilter<"Club"> | string | null
     members?: StudentListRelationFilter
   }, "id">
 
@@ -4270,14 +4270,14 @@ export namespace Prisma {
     id?: SortOrder
     name?: SortOrder
     type?: SortOrder
-    college_name?: SortOrder
+    collegeName?: SortOrder
     rating?: SortOrder
     logo?: SortOrder
     description?: SortOrder
     creation_date?: SortOrder
-    insta_link?: SortOrder
-    github_link?: SortOrder
-    linkedin_link?: SortOrder
+    instaLink?: SortOrder
+    githubLink?: SortOrder
+    linkedinLink?: SortOrder
     _count?: ClubCountOrderByAggregateInput
     _avg?: ClubAvgOrderByAggregateInput
     _max?: ClubMaxOrderByAggregateInput
@@ -4292,14 +4292,14 @@ export namespace Prisma {
     id?: StringWithAggregatesFilter<"Club"> | string
     name?: StringWithAggregatesFilter<"Club"> | string
     type?: StringWithAggregatesFilter<"Club"> | string
-    college_name?: StringWithAggregatesFilter<"Club"> | string
+    collegeName?: StringWithAggregatesFilter<"Club"> | string
     rating?: FloatNullableWithAggregatesFilter<"Club"> | number | null
-    logo?: StringNullableWithAggregatesFilter<"Club"> | string | null
+    logo?: StringWithAggregatesFilter<"Club"> | string
     description?: StringNullableWithAggregatesFilter<"Club"> | string | null
     creation_date?: DateTimeWithAggregatesFilter<"Club"> | Date | string
-    insta_link?: StringNullableWithAggregatesFilter<"Club"> | string | null
-    github_link?: StringNullableWithAggregatesFilter<"Club"> | string | null
-    linkedin_link?: StringNullableWithAggregatesFilter<"Club"> | string | null
+    instaLink?: StringNullableWithAggregatesFilter<"Club"> | string | null
+    githubLink?: StringNullableWithAggregatesFilter<"Club"> | string | null
+    linkedinLink?: StringNullableWithAggregatesFilter<"Club"> | string | null
   }
 
   export type StudentWhereInput = {
@@ -4410,14 +4410,14 @@ export namespace Prisma {
     id?: string
     name: string
     type: string
-    college_name: string
+    collegeName: string
     rating?: number | null
-    logo?: string | null
+    logo: string
     description?: string | null
-    creation_date: Date | string
-    insta_link?: string | null
-    github_link?: string | null
-    linkedin_link?: string | null
+    creation_date?: Date | string
+    instaLink?: string | null
+    githubLink?: string | null
+    linkedinLink?: string | null
     members?: StudentCreateNestedManyWithoutClubInput
   }
 
@@ -4425,42 +4425,42 @@ export namespace Prisma {
     id?: string
     name: string
     type: string
-    college_name: string
+    collegeName: string
     rating?: number | null
-    logo?: string | null
+    logo: string
     description?: string | null
-    creation_date: Date | string
-    insta_link?: string | null
-    github_link?: string | null
-    linkedin_link?: string | null
+    creation_date?: Date | string
+    instaLink?: string | null
+    githubLink?: string | null
+    linkedinLink?: string | null
     members?: StudentUncheckedCreateNestedManyWithoutClubInput
   }
 
   export type ClubUpdateInput = {
     name?: StringFieldUpdateOperationsInput | string
     type?: StringFieldUpdateOperationsInput | string
-    college_name?: StringFieldUpdateOperationsInput | string
+    collegeName?: StringFieldUpdateOperationsInput | string
     rating?: NullableFloatFieldUpdateOperationsInput | number | null
-    logo?: NullableStringFieldUpdateOperationsInput | string | null
+    logo?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     creation_date?: DateTimeFieldUpdateOperationsInput | Date | string
-    insta_link?: NullableStringFieldUpdateOperationsInput | string | null
-    github_link?: NullableStringFieldUpdateOperationsInput | string | null
-    linkedin_link?: NullableStringFieldUpdateOperationsInput | string | null
+    instaLink?: NullableStringFieldUpdateOperationsInput | string | null
+    githubLink?: NullableStringFieldUpdateOperationsInput | string | null
+    linkedinLink?: NullableStringFieldUpdateOperationsInput | string | null
     members?: StudentUpdateManyWithoutClubNestedInput
   }
 
   export type ClubUncheckedUpdateInput = {
     name?: StringFieldUpdateOperationsInput | string
     type?: StringFieldUpdateOperationsInput | string
-    college_name?: StringFieldUpdateOperationsInput | string
+    collegeName?: StringFieldUpdateOperationsInput | string
     rating?: NullableFloatFieldUpdateOperationsInput | number | null
-    logo?: NullableStringFieldUpdateOperationsInput | string | null
+    logo?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     creation_date?: DateTimeFieldUpdateOperationsInput | Date | string
-    insta_link?: NullableStringFieldUpdateOperationsInput | string | null
-    github_link?: NullableStringFieldUpdateOperationsInput | string | null
-    linkedin_link?: NullableStringFieldUpdateOperationsInput | string | null
+    instaLink?: NullableStringFieldUpdateOperationsInput | string | null
+    githubLink?: NullableStringFieldUpdateOperationsInput | string | null
+    linkedinLink?: NullableStringFieldUpdateOperationsInput | string | null
     members?: StudentUncheckedUpdateManyWithoutClubNestedInput
   }
 
@@ -4468,40 +4468,40 @@ export namespace Prisma {
     id?: string
     name: string
     type: string
-    college_name: string
+    collegeName: string
     rating?: number | null
-    logo?: string | null
+    logo: string
     description?: string | null
-    creation_date: Date | string
-    insta_link?: string | null
-    github_link?: string | null
-    linkedin_link?: string | null
+    creation_date?: Date | string
+    instaLink?: string | null
+    githubLink?: string | null
+    linkedinLink?: string | null
   }
 
   export type ClubUpdateManyMutationInput = {
     name?: StringFieldUpdateOperationsInput | string
     type?: StringFieldUpdateOperationsInput | string
-    college_name?: StringFieldUpdateOperationsInput | string
+    collegeName?: StringFieldUpdateOperationsInput | string
     rating?: NullableFloatFieldUpdateOperationsInput | number | null
-    logo?: NullableStringFieldUpdateOperationsInput | string | null
+    logo?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     creation_date?: DateTimeFieldUpdateOperationsInput | Date | string
-    insta_link?: NullableStringFieldUpdateOperationsInput | string | null
-    github_link?: NullableStringFieldUpdateOperationsInput | string | null
-    linkedin_link?: NullableStringFieldUpdateOperationsInput | string | null
+    instaLink?: NullableStringFieldUpdateOperationsInput | string | null
+    githubLink?: NullableStringFieldUpdateOperationsInput | string | null
+    linkedinLink?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type ClubUncheckedUpdateManyInput = {
     name?: StringFieldUpdateOperationsInput | string
     type?: StringFieldUpdateOperationsInput | string
-    college_name?: StringFieldUpdateOperationsInput | string
+    collegeName?: StringFieldUpdateOperationsInput | string
     rating?: NullableFloatFieldUpdateOperationsInput | number | null
-    logo?: NullableStringFieldUpdateOperationsInput | string | null
+    logo?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     creation_date?: DateTimeFieldUpdateOperationsInput | Date | string
-    insta_link?: NullableStringFieldUpdateOperationsInput | string | null
-    github_link?: NullableStringFieldUpdateOperationsInput | string | null
-    linkedin_link?: NullableStringFieldUpdateOperationsInput | string | null
+    instaLink?: NullableStringFieldUpdateOperationsInput | string | null
+    githubLink?: NullableStringFieldUpdateOperationsInput | string | null
+    linkedinLink?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type StudentCreateInput = {
@@ -4668,14 +4668,14 @@ export namespace Prisma {
     id?: SortOrder
     name?: SortOrder
     type?: SortOrder
-    college_name?: SortOrder
+    collegeName?: SortOrder
     rating?: SortOrder
     logo?: SortOrder
     description?: SortOrder
     creation_date?: SortOrder
-    insta_link?: SortOrder
-    github_link?: SortOrder
-    linkedin_link?: SortOrder
+    instaLink?: SortOrder
+    githubLink?: SortOrder
+    linkedinLink?: SortOrder
   }
 
   export type ClubAvgOrderByAggregateInput = {
@@ -4686,28 +4686,28 @@ export namespace Prisma {
     id?: SortOrder
     name?: SortOrder
     type?: SortOrder
-    college_name?: SortOrder
+    collegeName?: SortOrder
     rating?: SortOrder
     logo?: SortOrder
     description?: SortOrder
     creation_date?: SortOrder
-    insta_link?: SortOrder
-    github_link?: SortOrder
-    linkedin_link?: SortOrder
+    instaLink?: SortOrder
+    githubLink?: SortOrder
+    linkedinLink?: SortOrder
   }
 
   export type ClubMinOrderByAggregateInput = {
     id?: SortOrder
     name?: SortOrder
     type?: SortOrder
-    college_name?: SortOrder
+    collegeName?: SortOrder
     rating?: SortOrder
     logo?: SortOrder
     description?: SortOrder
     creation_date?: SortOrder
-    insta_link?: SortOrder
-    github_link?: SortOrder
-    linkedin_link?: SortOrder
+    instaLink?: SortOrder
+    githubLink?: SortOrder
+    linkedinLink?: SortOrder
   }
 
   export type ClubSumOrderByAggregateInput = {
@@ -5118,28 +5118,28 @@ export namespace Prisma {
     id?: string
     name: string
     type: string
-    college_name: string
+    collegeName: string
     rating?: number | null
-    logo?: string | null
+    logo: string
     description?: string | null
-    creation_date: Date | string
-    insta_link?: string | null
-    github_link?: string | null
-    linkedin_link?: string | null
+    creation_date?: Date | string
+    instaLink?: string | null
+    githubLink?: string | null
+    linkedinLink?: string | null
   }
 
   export type ClubUncheckedCreateWithoutMembersInput = {
     id?: string
     name: string
     type: string
-    college_name: string
+    collegeName: string
     rating?: number | null
-    logo?: string | null
+    logo: string
     description?: string | null
-    creation_date: Date | string
-    insta_link?: string | null
-    github_link?: string | null
-    linkedin_link?: string | null
+    creation_date?: Date | string
+    instaLink?: string | null
+    githubLink?: string | null
+    linkedinLink?: string | null
   }
 
   export type ClubCreateOrConnectWithoutMembersInput = {
@@ -5161,27 +5161,27 @@ export namespace Prisma {
   export type ClubUpdateWithoutMembersInput = {
     name?: StringFieldUpdateOperationsInput | string
     type?: StringFieldUpdateOperationsInput | string
-    college_name?: StringFieldUpdateOperationsInput | string
+    collegeName?: StringFieldUpdateOperationsInput | string
     rating?: NullableFloatFieldUpdateOperationsInput | number | null
-    logo?: NullableStringFieldUpdateOperationsInput | string | null
+    logo?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     creation_date?: DateTimeFieldUpdateOperationsInput | Date | string
-    insta_link?: NullableStringFieldUpdateOperationsInput | string | null
-    github_link?: NullableStringFieldUpdateOperationsInput | string | null
-    linkedin_link?: NullableStringFieldUpdateOperationsInput | string | null
+    instaLink?: NullableStringFieldUpdateOperationsInput | string | null
+    githubLink?: NullableStringFieldUpdateOperationsInput | string | null
+    linkedinLink?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type ClubUncheckedUpdateWithoutMembersInput = {
     name?: StringFieldUpdateOperationsInput | string
     type?: StringFieldUpdateOperationsInput | string
-    college_name?: StringFieldUpdateOperationsInput | string
+    collegeName?: StringFieldUpdateOperationsInput | string
     rating?: NullableFloatFieldUpdateOperationsInput | number | null
-    logo?: NullableStringFieldUpdateOperationsInput | string | null
+    logo?: StringFieldUpdateOperationsInput | string
     description?: NullableStringFieldUpdateOperationsInput | string | null
     creation_date?: DateTimeFieldUpdateOperationsInput | Date | string
-    insta_link?: NullableStringFieldUpdateOperationsInput | string | null
-    github_link?: NullableStringFieldUpdateOperationsInput | string | null
-    linkedin_link?: NullableStringFieldUpdateOperationsInput | string | null
+    instaLink?: NullableStringFieldUpdateOperationsInput | string | null
+    githubLink?: NullableStringFieldUpdateOperationsInput | string | null
+    linkedinLink?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type StudentCreateManyClubInput = {

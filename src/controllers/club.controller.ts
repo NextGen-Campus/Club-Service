@@ -62,4 +62,19 @@ const registerClub = asyncHandler(async (req: Request, res: Response) => {
   res.status(201).json(new ApiResponse(201, club, "New club created!"));
 });
 
-export { registerClub };
+const deleteClub = asyncHandler(async(req: Request, res: Response) => {
+  
+  const {id} = req.body;
+
+  await prisma.club.delete({
+    where:{
+      id: id
+    }
+  })
+
+  res
+  .status(200)
+  .json(new ApiResponse(200, "club deleted successfully "))
+})
+
+export { registerClub, deleteClub };

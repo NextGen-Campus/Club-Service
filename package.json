@@ -20,6 +20,7 @@
   "homepage": "https://github.com/NextGen-Campus/Club-Service#readme",
   "dependencies": {
     "@prisma/client": "^6.8.2",
+    "bcryptjs": "^3.0.2",
     "body-parser": "^2.2.0",
     "cloudinary": "^2.6.1",
     "cookie-parser": "^1.4.7",
@@ -34,6 +35,7 @@
     "typescript": "^5.8.3"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
     "@types/cookie-parser": "^1.4.8",
     "@types/cors": "^2.8.18",
     "@types/express": "^5.0.2",

@@ -14,4 +14,5 @@ router.route("/find-clubs").get(searchClub)
 
 router.route("/update-club/:id").post(upload.fields([{name: "logo", maxCount: 1}]) ,updateClub)
 
+
 export default router;

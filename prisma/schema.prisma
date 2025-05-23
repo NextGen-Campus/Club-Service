@@ -32,11 +32,14 @@ model Club {
 model Student {
   id           String  @id @default(auto()) @map("_id") @db.ObjectId
   name         String
+  username     String
+  password     String
   college_name String
   email        String  @unique
   type         String  @default("member")
   Club         Club?   @relation(fields: [clubId], references: [id])
   clubId       String? @db.ObjectId
+  refreshToken String?
 }
 
 model Event {

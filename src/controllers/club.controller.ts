@@ -53,6 +53,15 @@ const registerClub = asyncHandler(async (req: Request, res: Response) => {
     data: clubData,
   });
 
+  // //making the admin who created the club
+  // await prisma.student.update({
+  //   where: { id: (req as any).user.id },
+  //   data: {
+  //     clubId: club.id,
+  //     type: "admin",
+  //   },
+  // });
+
   if (!club) {
     throw new ApiError(400, "Error registering the club");
   }

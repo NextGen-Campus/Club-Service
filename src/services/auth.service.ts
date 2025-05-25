@@ -36,7 +36,7 @@ export const generateAccessAndRefreshTokens = async (userId: string) => {
   }
 
   const accessToken = jwt.sign({ id: student.id }, accessSecret, {
-    expiresIn: "15m",
+    expiresIn: "1d",
   });
 
   const refreshToken = jwt.sign({ id: student.id }, refreshSecret, {
